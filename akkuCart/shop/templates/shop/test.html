@@ -1,0 +1,430 @@
+{% extends 'shop/basic.html' %}
+{% block title %} Title of Index {% endblock%}
+{% block body %} Body of Index {% endblock%}
+{% block css %} 
+<style>
+    .col-md-3 {
+      display: inline-block;
+      margin-left: -4px;
+    }
+
+    .col-md-3 {
+      width: 100%;
+      height: auto;
+    }
+
+    body .carousel-control-indicator li {
+      background-color: blue;
+    }
+
+    body .carousel-control-prev-icon body .carousel-control-next-icon {
+      background-color: blue;
+    }
+
+    body .no-padding {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .carousel-control-prev-icon {
+      background: black no-repeat center center;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+    }
+
+    .carousel-control-next-icon {
+      background: black no-repeat center center;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+    }
+    body .carousel-indicators {
+      bottom: 0;
+    }
+
+    .carousel-indicators .active {
+      background-color: blue;
+    }
+  </style>
+{% endblock %}  
+{% block alerts %}
+<div
+      class="alert alert-success alert-dismissible fade show"
+      role="alert"
+      style="margin-bottom: 0px"
+    >
+      <strong>Hey! Welcome to Akku Cart ...</strong> Try Using Different
+      Features Below !
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+{% endblock %}
+{% block cards %}     
+    <div class="container">
+      <div id="demo" class="carousel slide my-3" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#demo"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#demo"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+    <!-- USING TEMPLATE -- CAROUSEL AND CARDS-->
+    <section class="section" id="kids">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-heading">
+              <h2>Kid's Latest</h2>
+              <span
+                >Details to details is what makes Hexashop different from the
+                other themes.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="kid-item-carousel">
+              <div class="owl-kid-item owl-carousel">
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-content">
+                      <ul>
+                        <li>
+                          <a href="shop/single-product.html"
+                            ><i class="fa fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="shop/single-product.html"
+                            ><i class="fa fa-star"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="shop/single-product.html"
+                            ><i class="fa fa-shopping-cart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <img src="shop/kid-01.jpg" alt="" />
+                  </div>
+                  <div class="down-content">
+                    <h4>School Collection</h4>
+                    <span>$80.00</span>
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-content">
+                      <ul>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-star"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-shopping-cart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <img src="assets/images/kid-02.jpg" alt="" />
+                  </div>
+                  <div class="down-content">
+                    <h4>Summer Cap</h4>
+                    <span>$12.00</span>
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-content">
+                      <ul>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-star"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-shopping-cart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <img src="assets/images/kid-03.jpg" alt="" />
+                  </div>
+                  <div class="down-content">
+                    <h4>Classic Kid</h4>
+                    <span>$30.00</span>
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-content">
+                      <ul>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-star"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-shopping-cart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <img src="assets/images/kid-01.jpg" alt="" />
+                  </div>
+                  <div class="down-content">
+                    <h4>Classic Spring</h4>
+                    <span>$120.00</span>
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
